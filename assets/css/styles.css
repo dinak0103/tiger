@@ -88,7 +88,7 @@ img {
 
 /*=============== SPIN ===============*/
 .spin {
-  background: url('/assets/img/preloader\ 1.png') center/cover;
+  background: url('preloader\ 1.png') center/cover;
 }
 
 .spin__container {
@@ -96,13 +96,14 @@ img {
 }
 
 .spin__tiger {
-  background: url('/assets/img/image-6\ 1.png') center/cover;
+  background: url('image-6\ 1.png') center/cover;
   height: 370px;
   top: 0;
 }
 
 .spin__bg {
-  background: url('/assets/img/Rectangle\ 3.png') center/cover;
+  background: url('Rectangle\ 3.png') center/cover;
+  position: relative;
 }
 
 .spin__wheel {

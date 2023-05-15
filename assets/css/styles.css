@@ -1,11 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
 
-/*=============== VARIABLES CSS ===============*/
-:root {
-  --header-height: 3.5rem;
-  --z-fixed: 100;
-}
 
 /*=============== BASE ===============*/
 * {
@@ -31,16 +26,7 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
-  max-width: 1024px;
-}
-
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -68,15 +54,18 @@ img {
 }
 
 /*=============== HOME ===============*/
+.home {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 .home__tiger {
   width: 300px;
 }
 
-.home__tiger,
-.tiger__logo {
-  justify-self: center;
-}
 
 .tiger__logo {
   position: absolute;

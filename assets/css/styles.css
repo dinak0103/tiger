@@ -1,0 +1,248 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+  --z-fixed: 100;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inknut Antiqua', serif;;
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+  padding: 0 0 5rem 0;
+}
+
+/*=============== BUTTON ===============*/
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  width: 200px;
+  height: 65px;
+  font-size: 3rem;
+  background-color: #4CC518;
+  color: black;
+  transition: background .3s;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+/*=============== HOME ===============*/
+.home {
+  background: url('/assets/img/bg.png') center/cover;
+}
+
+.home__tiger,
+.tiger__logo {
+  justify-self: center;
+}
+
+.tiger__logo {
+  position: absolute;
+  width: 300px;
+  top: 10rem;
+  left: 3rem;
+  z-index: 100;
+}
+
+/*=============== SPIN ===============*/
+.spin {
+  background: url('/assets/img/preloader\ 1.png') center/cover;
+}
+
+.spin__container {
+  gap: .1rem;
+}
+
+.spin__tiger {
+  background: url('/assets/img/image-6\ 1.png') center/cover;
+  height: 370px;
+  top: 0;
+}
+
+.spin__bg {
+  background: url('/assets/img/Rectangle\ 3.png') center/cover;
+}
+
+.spin__wheel {
+  position: relative;
+  width: 325px;
+  height: 325px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 1.5rem;
+}
+
+.cta {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinbutton {
+  z-index: 100;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.spinBtn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px solid #b0b0b0;
+}
+
+.spinBtn::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  width: 20px;
+  height: 30px;
+  background: #fff;
+  clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+}
+
+.wheel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 5px #333,
+  0 0 0 15px #fff,
+  0 0 0 18px #111;
+  transition: transform 5s ease-in-out;
+}
+
+.number {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  transform-origin: bottom right;
+  transform: rotate(calc(45deg * var(--i)));
+  clip-path: polygon(0 0, 56% 0, 100% 100%, 0 56%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.number span {
+  position: relative;
+  transform: rotate(45deg);
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 3px 5px 2px rgba(0,0,0,0.15);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .tiger__logo {
+    width: 250px;
+    top: 7rem;
+    left: 2rem;
+  }  
+
+}
+
+
+
+@media screen and (min-width: 767px) {
+  .tiger__logo {
+    width: 300px;
+    top: 10rem;
+    left: 13rem;
+  }  
+
+  .spin__wheel {
+    left: 13rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .tiger__logo {
+    width: 300px;
+    top: 10rem;
+    left: 22rem;
+  } 
+
+  .spin__wheel {
+    left: 20rem;
+  }
+
+  .tspin__tiger {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 1064px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .tiger__logo {
+    width: 300px;
+    top: 10rem;
+    left: 35rem;
+  } 
+
+}
+

@@ -68,8 +68,9 @@ img {
 }
 
 /*=============== HOME ===============*/
-.home {
-  background: url('/assets/img/bg.png') center/cover;
+
+.home__tiger {
+  width: 300px;
 }
 
 .home__tiger,

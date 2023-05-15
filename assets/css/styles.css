@@ -87,23 +87,19 @@ img {
 }
 
 /*=============== SPIN ===============*/
-.spin {
-  background: url('preloader\ 1.png') center/cover;
-}
 
 .spin__container {
   gap: .1rem;
 }
 
 .spin__tiger {
-  background: url('image-6\ 1.png') center/cover;
-  height: 370px;
+  height: 300px;
   top: 0;
 }
 
 .spin__bg {
-  background: url('Rectangle\ 3.png') center/cover;
   position: relative;
+  top: -3rem;
 }
 
 .spin__wheel {
@@ -114,19 +110,22 @@ img {
   justify-content: center;
   align-items: center;
   left: 1.5rem;
+  top: .1rem;
+  z-index: 100;
 }
 
 .cta {
-  display: flex;
   position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
+  height: 200px;
+  top: -5rem;
 }
 
 .spinbutton {
-  z-index: 100;
   position: absolute;
-  bottom: 1rem;
+  bottom: .1rem;
 }
 
 .spinBtn {
